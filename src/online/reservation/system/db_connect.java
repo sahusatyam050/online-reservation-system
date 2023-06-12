@@ -19,7 +19,7 @@ public class db_connect {
         try
         {
             DriverManager.registerDriver(new oracle.jdbc.OracleDriver());
-            Connection mycon=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","satyam","satyam");
+            Connection mycon=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","manager");
             s=mycon.createStatement();
             
         }
